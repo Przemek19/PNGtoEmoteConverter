@@ -55,5 +55,10 @@ canvas {
   width: fit-content;
   height: fit-content;
   border-radius: 4px;
-  font-size: 8px;
+  font-size: 4px;
+  line-height: 100%;
+}
+
+#pixeledImage {
+  display: none;
 }
