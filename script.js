@@ -49,7 +49,7 @@ const convertRGBToEmote = (r, g, b, a) => {
   } else if (r > 128 && g < 48 && b < 64) { // Red
     return '🟥';
   } else if (r > 192 && g < 100 && b < 150) { // Pink
-    return '🟪';
+    return '💗';
   } else if (r > 100 && g > 128 && b < 64) { // Yellow
     return '🟨';
   } else if (r > 128 && g > 64 && b < 64) { // Orange
