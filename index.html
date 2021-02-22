@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>PNG to Emote</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <input type="text" placeholder="Image url..." id="imageUrl" value="https://i.imgur.com/0EbwkXa.png" /><br />
+    <input type="number" placeholder="Width..."value="128" id="width" /> x <input type="number" placeholder="Height..." value="128" id="height" />px
+    <br />
+    <button onclick="loadImage()">Load Image</button><br />
+    <canvas id="image"></canvas><br />
+    <input type="number" id="x" placeholder="X..." value="32" /><input type="number" placeholder="Y..." id="y" value="32" /><input type="number" placeholder="Cut by lines..." id="cuts" value="6" /><button onclick="convert()">Convert</button><br />
+    <span class="resultText">Result:</span><br />
+    <canvas id="pixeledImage"></canvas><br />
+    <div id="result"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
