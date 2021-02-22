@@ -42,12 +42,18 @@ const convertRGBToEmote = (r, g, b, a) => {
   if (a == 0) return '🦴';
   if (r > 150 && g > 150 && b > 150) { // White
     return '⬜';
+  } else if (r > 192 && g > 128 && b < 64) { // Orange
+    return '🟧';
+  } else if (r > 100 && g > 128 && b < 64) { // Yellow
+    return '🟨';
   } else if (r < 100 && g > 128 && b < 128) { // Green
     return '🟩';
-  } else if (r < 32 && g < 128 && b > 128) { // Blue
+  } else if (r < 64 && g < 192 && b > 128) { // Blue
     return '🟦';
-  } else if (r > 128 && g < 48 && b > 48) { // Red
+  } else if (r > 128 && g < 48 && b < 64) { // Red
     return '🟥';
+  } else if (r > 160 && g > 100 && b > 64 && r < 220 && g < 200 && b < 150) { // Skin color
+    return '😀';
   } else {
     return '⬛';
   }
