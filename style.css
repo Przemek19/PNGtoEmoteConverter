@@ -24,7 +24,7 @@ input, button {
   margin-bottom: 8px;
 }
 
-#width, #height, #x, #y, #cuts {
+#width, #height, #x, #y, #cuts, #prefix {
   width: 100px;
 }
 
